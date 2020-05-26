@@ -3,12 +3,57 @@
   <head>
     <title>Saasapp</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class='container'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--html link -->
+          <!--<a href="/" class="navbar-brand">-->
+          <!--  <i class= 'fa fa-group'></i> -->
+          <!--  DevMatch-->
+          <!--</a>-->
+          
+          <!--ruby hardcoded link-->
+          <!--#<#%= link_to "/", #class: "navbar-brand" do %>-->
+          <!--  <i class= 'fa fa-group'></i>-->
+          <!--  DevMatch-->
+          <!--#<#% #end %>-->
+          
+          <!--dynamic ruby link-->
+          <%= link_to root_path, class: "navbar-brand" do %>
+            <i class= 'fa fa-group'></i>
+            DevMatch
+          <% end %>
+          
+          
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <!-- html link -->
+            <!--<li><a href="/about">About</a></li>-->
+            
+            <!-- ruby hardcoded link -->
+            <!--<li><#%= #link_to 'About', "/about"%></li>-->
+            
+            <!--dynamic ruby link-->
+            <li><%= link_to 'About', about_path%></li>
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+      <%= yield %>
   </body>
 </html>
