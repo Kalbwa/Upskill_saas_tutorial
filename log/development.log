@@ -3858,3 +3858,89 @@ Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mContact Load (1.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Joe"], ["created_at", 2020-05-29 16:47:08 UTC], ["updated_at", 2020-05-29 16:47:08 UTC]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT  "contacts".* FROM "contacts" ORDER BY "contacts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT  "contacts".* FROM "contacts" ORDER BY "contacts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for 89.187.175.38 at 2020-05-29 16:54:52 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 331ms (Views: 322.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 16:54:57 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  
+app/models/contact.rb:2:in `<class:Contact>'
+app/models/contact.rb:1:in `<top (required)>'
+app/controllers/contacts_controller.rb:3:in `new'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.1ms)
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 16:55:31 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 70ms (Views: 62.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 16:55:46 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Q2wFf9IVhHWQGR0B8tSgXE8IENYHcNBTZJJfUgLjNNZmKjlBwpSMVVZZfq1XDvbZYjgmgo92vzPjOjT5evNWA==", "contact"=>{"name"=>"14ff", "email"=>"eff", "comments"=>""}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 16:55:46 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 16:55:56 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SvR5Db5TaWyEYNtPoYp0YwvtDedg2iJhpi8hHvTqmk/mYWH9RhFtTAd52sETHR05H1nNPjL6O9wkMYCwWQrbxA==", "contact"=>{"name"=>"qde", "email"=>"qded", "comments"=>"qwededeqwdededq"}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 16:55:56 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mContact Load (1.9ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
