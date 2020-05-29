@@ -3944,3 +3944,169 @@ Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.0ms)
 
   [1m[36mContact Load (1.9ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
   [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:07:07 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 345ms (Views: 331.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 17:07:34 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqGAftwQC1lQo0cn09YB6SNSoMCW0Em2817ryXa/kIIeNJiOJFIPedO6RqlhQWizN+ZgGcTwUAtxQEpn21/RCQ==", "contact"=>{"name"=>"yoosters ", "email"=>"test@testing.com", "comments"=>"ehbdewbon 3h "}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:07:34 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 104ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 17:08:17 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TQ4lJZAdiAe/1n68tOkwuSQHU+EghenCPW5lUCpB04bhmz3VaF+MJzzPfzIGflnjMLOTOHKl8H+/cMT+h6GSDQ==", "contact"=>{"name"=>"yoosters ", "email"=>"test@testing.com", "comments"=>"dneiuihh ehoyqfhfoq ohfquheofhehf hfioqhefhehfqhfo hoqhfq f "}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:08:17 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:08:20 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:09:59 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 68ms (Views: 60.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 17:10:01 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ikKY9iEzU6JBNfm9Y5b9cIXJNY4mnUYHJkgce7MBc1Am14AG2XFXgsIs+DPRAZQqkX31V3S9X7qkVr3VHuEy2w==", "contact"=>{"name"=>"", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:10:02 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 17:11:57 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/b/IjDqQM5yTAJPwKFhYqT1SO/vuQqUS+2dHyTDwXM5RKtB8wtI3vBAZkn6azzHzKeb7IrxivK95eeZnnRAdRQ==", "contact"=>{"name"=>"dqeq", "email"=>"test@testing.com", "comments"=>"nih88g8g7f9gho"}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:11:57 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 17:12:11 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wQEdzFoYMzRloqznOn5aItPPqVqCIJcVy68S5SbT5odtlAU8olo3FOa7rWmI6TN4x3tpg9AAjqhJsbNLizOnDA==", "contact"=>{"name"=>"r1hur", "email"=>"r3r1rr", "comments"=>"rr4r"}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:12:11 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mContact Load (1.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Started GET "/" for 89.187.175.38 at 2020-05-29 17:13:28 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 324ms (Views: 315.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 89.187.175.38 at 2020-05-29 17:13:30 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:13:38 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 111ms (Views: 98.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-29 17:13:54 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RUldNOwj9Lt1X2cp+1XzsVPJcipiBL//2CYtWKI7+ilvcH4ygEfgXVb+8nI5EpKEwuxE8ITCG5FtQVf+2jtaRQ==", "contact"=>{"name"=>"qde", "email"=>"rf2frtvt", "comments"=>"3d1[j]f[hf[hhf f8h rfh8h 2rh vh0h2h 0rvrhv0r vr0hv0h[20hfr03v2 . "}, "commit"=>"Submit"}
+Unpermitted parameter: comments
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contacts/new
+Completed 302 Found in 6ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/new" for 89.187.175.38 at 2020-05-29 17:13:54 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mContact Load (0.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
