@@ -9,13 +9,13 @@ class ContactsController < ApplicationController
       flash[:success] = "Message sent"
       redirect_to new_contact_path #notice: "Message sent."
     else
-      flash[:error] = @contact.errors.full_messages.join(", ")
+      flash[:danger] = @contact.errors.full_messages.join(", ")
       redirect_to new_contact_path #notice: "Error occured."
     end
   end
   
   private
     def contact_params
-      params.require(:contact).permit(:name, :email, :commerce)
+      params.require(:contact).permit(:name, :email, :comments)
     end
 end
