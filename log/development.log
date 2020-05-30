@@ -4557,3 +4557,98 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 89.187.175.38 at 2020-05-30 14:38:37 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 250ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 89.187.175.38 at 2020-05-30 14:39:49 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 114ms (Views: 105.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/contacts" for 89.187.175.38 at 2020-05-30 14:41:53 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9TYWAUIb9eBnmGrXvBeqneGeiUQOSUmvmlopqGEp7xbfDzUHLn/hBkQ5/4x+UMuocLu/nuiP7cEvPVMOGSlPeg==", "contact"=>{"name"=>"yoosters ", "email"=>"test@testing.com", "comments"=>"jncncpqucu cuecqpbc"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "yoosters "], ["email", "test@testing.com"], ["comments", "jncncpqucu cuecqpbc"], ["created_at", 2020-05-30 14:41:53 UTC], ["updated_at", 2020-05-30 14:41:53 UTC]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  Rendering contact_mailer/contact_email.html.erb
+  Rendered contact_mailer/contact_email.html.erb (0.4ms)
+ContactMailer#contact_email: processed outbound mail in 196.0ms
+Sent mail to bagayraz@protonmail.com (386.1ms)
+Date: Sat, 30 May 2020 14:41:53 +0000
+From: test@testing.com
+To: bagayraz@protonmail.com
+Message-ID: <5ed270b197f99_1f2b1fcb8f886729@ip-172-31-37-140.mail>
+Subject: Contact Form Message
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p>
+      You have received a message from the site's contact form, from
+      yoosters , test@testing.com
+    </p>
+    <p>jncncpqucu cuecqpbc</p>
+  </body>
+    
+</html>
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/contact-us
+Completed 302 Found in 756ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/contact-us" for 89.187.175.38 at 2020-05-30 14:41:54 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mContact Load (1.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+Started GET "/" for 89.187.175.38 at 2020-05-30 14:47:51 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 89.187.175.38 at 2020-05-30 14:47:55 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 89.187.175.38 at 2020-05-30 14:47:57 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 89.187.175.38 at 2020-05-30 14:48:00 +0000
+Cannot render console from 89.187.175.38! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
