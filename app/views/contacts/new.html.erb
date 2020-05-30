@@ -1,0 +1,43 @@
+<div class= 'container'>
+  <div class="row">
+    <h3 class= 'text-center'>Contact us</h3>
+    
+    <div class="col-md-4 col-md-offset-4">
+      
+      <div class="well">
+        <!--html way of creating a form-->
+        <!--<form>-->
+        <!--  <label>Name</label>-->
+        <!--  <input type='text'>-->
+        <!--  <br>-->
+        <!--  <label>Email</label>-->
+        <!--  <input type='text'>-->
+        <!--  <br>-->
+        <!--  <label>Commets</label>-->
+        <!--  <input type='text'>-->
+        <!--  <br>-->
+        <!--  <input type='submit'>-->
+        <!--</form>-->
+        
+        <%= form_for @contact do |f|%>
+          <div class='form-group'>
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+          
+          <div class='form-group'>
+            <%= f.label :email %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+          
+          <div class='form-group'>
+            <%= f.label :comments %>
+            <%= f.text_area :comments, class: 'form-control'%>
+          </div>
+          
+          <%= f.submit 'Submit', class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

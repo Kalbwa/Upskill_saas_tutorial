@@ -49,11 +49,18 @@
             
             <!--dynamic ruby link-->
             <li><%= link_to 'About', about_path%></li>
-            
+            <li><%= link_to 'Contact Us', new_contact_path %></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
+    
+    <div class= 'container'>
+      <% flash.each do |type, msg| %> 
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
+    </div>
+      
       <%= yield %>
   </body>
 </html>
