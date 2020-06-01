@@ -44,6 +44,9 @@ h1, h2, h3 {
   color: white;
 }
 
+.alert-notice {
+  display: none;
+}
 
 // Nav Border styles
 .navbar{
@@ -76,7 +79,6 @@ h1, h2, h3 {
     background-color: #00c6ff;
   }
 }
-
 // dry css refactored 
 // .navbar-default .navbar-brand,
 // .navbar-default .navbar-nav > li > a {
