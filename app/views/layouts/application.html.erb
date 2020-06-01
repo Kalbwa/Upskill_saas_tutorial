@@ -41,9 +41,12 @@
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           
-          <!--Rails links best practice-->
-          <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn" %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
+          <div class="nav navbar-nav navbar-right">
+            <!--Rails links best practice-->
+            <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
+          </div>
+          
           <!--Raw html links-->
           <!--<div class="nav navbar-nav navbar-right">-->
           <!--  <a href="/users/sign_in" class="btn btn-default navbar-btn">-->
@@ -53,6 +56,7 @@
           <!--    Sign Up-->
           <!--  </a>-->
           <!--</div>-->
+          
           <ul class="nav navbar-nav navbar-right">
             <!-- html link -->
             <!--<li><a href="/about">About</a></li>-->
