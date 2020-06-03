@@ -1,0 +1,11 @@
+# Add configuration values here, as shown below.
+#
+# pusher_app_id: "2954"
+# pusher_key: 7381a978f7dd7f9a1117
+# pusher_secret: abdc3b896a0ffb85d373
+stripe_api_key: sk_test_51Gq2ShJajGnPKQW3VicAqPblYDDR5MK7zFEkkuWErfjsqUebCM9DQyDXOgUbbAgxR2cUG7G9Xnz9Vse9ZIhAfMRo00D2nOtCqy
+stripe_publishable_key: pk_test_51Gq2ShJajGnPKQW3fH8XhXDjQZmWZXtLtDE49KuFPb8hT65njQ9LSQuVJB6VS6uarySxkcNhFpJ7r9q6PLaZUwsM00Nb3Bu88m
+#
+production:
+  stripe_api_key: sk_test_51Gq2ShJajGnPKQW3VicAqPblYDDR5MK7zFEkkuWErfjsqUebCM9DQyDXOgUbbAgxR2cUG7G9Xnz9Vse9ZIhAfMRo00D2nOtCqy
+  stripe_publishable_key: pk_test_51Gq2ShJajGnPKQW3fH8XhXDjQZmWZXtLtDE49KuFPb8hT65njQ9LSQuVJB6VS6uarySxkcNhFpJ7r9q6PLaZUwsM00Nb3Bu88m
