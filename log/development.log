@@ -7406,3 +7406,55 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.83.42.68 at 2020-06-03 22:28:16 +0000
+Cannot render console from 172.83.42.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 377ms (Views: 356.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.83.42.68 at 2020-06-03 22:31:41 +0000
+Cannot render console from 172.83.42.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 336ms (Views: 313.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 172.83.42.68 at 2020-06-03 22:38:38 +0000
+Cannot render console from 172.83.42.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 91ms (Views: 87.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.83.42.68 at 2020-06-03 22:42:22 +0000
+Cannot render console from 172.83.42.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 172.83.42.68 at 2020-06-03 22:43:16 +0000
+Cannot render console from 172.83.42.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
