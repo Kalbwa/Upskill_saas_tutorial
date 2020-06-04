@@ -7458,3 +7458,89 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 80ms (Views: 76.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 86.106.87.249 at 2020-06-04 15:35:18 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 390ms (Views: 365.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 86.106.87.249 at 2020-06-04 15:35:21 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 88ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 86.106.87.249 at 2020-06-04 15:51:03 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 190ms (Views: 188.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=2" for 86.106.87.249 at 2020-06-04 15:51:12 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (30.4ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 98ms (Views: 79.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?plan=2" for 86.106.87.249 at 2020-06-04 16:09:24 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (2.7ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=2" for 86.106.87.249 at 2020-06-04 16:10:11 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (2.7ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=2" for 86.106.87.249 at 2020-06-04 16:10:21 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (2.8ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=2" for 86.106.87.249 at 2020-06-04 16:13:24 +0000
+Cannot render console from 86.106.87.249! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (2.7ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
