@@ -10415,3 +10415,44 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 89.38.227.100 at 2020-06-05 18:36:25 +0000
+Cannot render console from 89.38.227.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 322ms (Views: 298.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up?plan=2" for 89.38.227.100 at 2020-06-05 18:36:49 +0000
+Cannot render console from 89.38.227.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (17.4ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 119ms (Views: 105.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?plan=5" for 89.38.227.100 at 2020-06-05 18:36:54 +0000
+Cannot render console from 89.38.227.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"5"}
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/
+Filter chain halted as :select_plan rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 89.38.227.100 at 2020-06-05 18:36:54 +0000
+Cannot render console from 89.38.227.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.2ms)
+
+
