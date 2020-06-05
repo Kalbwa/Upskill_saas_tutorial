@@ -2,20 +2,20 @@
 // Document ready 
 $(document).on('turbolinks:loads', function(){
   var theForm = $('#pro_form');
-  var submitBtn = $('form-submit-btn');
+  var submitBtn = $('form-sign_up-btn');
   // set the stripe public key 
-  Stripe.setPublishablekeys( $('meta[name="stripe-key"]'). attr('content'));
+  Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content'));
   // when user click form submit btn
   submitBtn.click(function(event){
     // prevent default submission behavior. 
     event.preventDefault();
-    submitBtn.val("Processing").prop("disable", true);
+    submitBtn.val("Processing").prop("disabled", true);
     
     // Collect the credit card fields.
-    var ccNumm = $('#card-number').val(),
+    var ccNumm = $('#card_number').val(),
       cvcNum = $('#card_code').val(),
-      expMonth = $('#card_month'),
-      expYear = $('#card_year');
+      expMonth = $('#card_month').val(),
+      expYear = $('#card_year').val();
       
     // Use stripe js library to check for card errors.
     var error = false;
@@ -58,9 +58,9 @@ $(document).on('turbolinks:loads', function(){
     var token = response.id;
     
     // Inject card token as hidden field into form
-    theForm.append($('<input typre="hidden" name="user[stripe_card_token]">').val(token) );
+    theForm.append($('<input type="hidden" name="user[stripe_card_token]">').val(token) );
   
     // Submit form to our Rails app.
     theForm.get(0).submit();
   }
-})
+});
