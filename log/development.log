@@ -12522,3 +12522,300 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 57ms (Views: 54.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 195.181.163.45 at 2020-06-11 19:20:10 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.7ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 58.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about" for 195.181.163.45 at 2020-06-11 19:20:17 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 195.181.163.45 at 2020-06-11 19:20:19 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 195.181.163.45 at 2020-06-11 19:56:07 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 195.181.163.45 at 2020-06-11 19:56:12 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 195.181.163.45 at 2020-06-11 19:56:22 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hxxnNXV//glCcUnhehjDxxYlqpoukRTokrSpWg1qb4dWPikosGTAUZfYIzZz1snzULYNkTE8d6Cy7kNEAPa1UA==", "user"=>{"email"=>"test@protonmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@protonmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hxxnNXV//glCcUnhehjDxxYlqpoukRTokrSpWg1qb4dWPikosGTAUZfYIzZz1snzULYNkTE8d6Cy7kNEAPa1UA==", "user"=>{"email"=>"test@protonmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 205ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 195.181.163.45 at 2020-06-11 19:56:31 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YZsdf4MKlEccr+Vgvkm25YhZ8+eZOpUurj/INtLqIvmLNqo6g+tCZblgMeEjHFO2FjGlWjqsLszXvDRt9F3XKw==", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2020-06-11 19:56:32 UTC], ["sign_in_count", 2], ["updated_at", 2020-06-11 19:56:32 UTC], ["id", 1]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 176ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 195.181.163.45 at 2020-06-11 19:56:32 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/profile/new" for 195.181.163.45 at 2020-06-11 19:56:39 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering profiles/new.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (2.9ms)
+  Rendered profiles/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/1/profile" for 195.181.163.45 at 2020-06-11 19:56:50 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyD4xEb4SdPyEuQvPbGKcl/eLcBquVdXV84q42OxKTVofHM3LzSNckud77nF1JNvv8l1PfPdmyG6MDCqJsxFvw==", "profile"=>{"first_name"=>"qde", "last_name"=>"dqed", "job_title"=>"Developer", "phone_number"=>"qdqe", "contact_email"=>"dqed", "description"=>"dqdeq"}, "commit"=>"Update Profile", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `buil_profile' for #<User:0x007f3ea0d758f8>
+Did you mean?  build_profile):
+  
+app/controllers/profiles_controller.rb:14:in `create'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+Started GET "/" for 195.181.163.45 at 2020-06-11 19:57:37 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 75ms (Views: 63.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1/profile/new" for 195.181.163.45 at 2020-06-11 19:57:43 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering profiles/new.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (3.3ms)
+  Rendered profiles/new.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 59.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/1/profile" for 195.181.163.45 at 2020-06-11 19:57:58 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7u2vWjpBk/YCNdx29MGDaKfwKGmXQA90YVXoMNcNZDr9sSSpU41XV7u61+AMpJp1R+dwlA4kwwKMq/J5knAIsA==", "profile"=>{"first_name"=>"ede", "last_name"=>"thj67jj", "job_title"=>"Developer", "phone_number"=>"brbrn5un", "contact_email"=>"5um mum5", "description"=>"mumun5 5"}, "commit"=>"Update Profile", "user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "profiles" ("user_id", "first_name", "last_name", "job_title", "phone_number", "contact_email", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["first_name", "ede"], ["last_name", "thj67jj"], ["job_title", "Developer"], ["phone_number", "brbrn5un"], ["contact_email", "5um mum5"], ["description", "mumun5 5"], ["created_at", 2020-06-11 19:57:58 UTC], ["updated_at", 2020-06-11 19:57:58 UTC]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 20ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/" for 195.181.163.45 at 2020-06-11 19:57:58 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mProfile Load (1.3ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
+Started GET "/" for 195.181.163.45 at 2020-06-11 20:01:03 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 72ms (Views: 61.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1/profile/new" for 195.181.163.45 at 2020-06-11 20:17:16 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering profiles/new.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (3.2ms)
+  Rendered profiles/new.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 79.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users/1/profile" for 195.181.163.45 at 2020-06-11 20:17:20 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sy+hUwaH+z/sJ70XK3CrpsbCvFN6RoMPYizd2pHDc3Sgcyqgb0s/nlWotoHTFbK7JtXkruMiT3mP0seT1L4f/g==", "profile"=>{"first_name"=>"", "last_name"=>"", "job_title"=>"Developer", "phone_number"=>"", "contact_email"=>"", "description"=>""}, "commit"=>"Update Profile", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[33mUPDATE "profiles" SET "user_id" = ?, "updated_at" = ? WHERE "profiles"."id" = ?[0m  [["user_id", nil], ["updated_at", 2020-06-11 20:17:20 UTC], ["id", 1]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "profiles" ("user_id", "first_name", "last_name", "job_title", "phone_number", "contact_email", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["first_name", ""], ["last_name", ""], ["job_title", "Developer"], ["phone_number", ""], ["contact_email", ""], ["description", ""], ["created_at", 2020-06-11 20:17:20 UTC], ["updated_at", 2020-06-11 20:17:20 UTC]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://f9ba8786801c4c79a4e85077d7bb5066.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 31ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/" for 195.181.163.45 at 2020-06-11 20:17:20 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.6ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wewe" for 195.181.163.45 at 2020-06-11 20:22:57 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/wewe"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [34 times] (13.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendering /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.1ms)
+Started GET "/" for 195.181.163.45 at 2020-06-11 20:29:21 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 78ms (Views: 65.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/1/profile/new" for 195.181.163.45 at 2020-06-11 20:30:02 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProfilesController#new as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering profiles/new.html.erb within layouts/application
+  Rendered profiles/_form.html.erb (3.4ms)
+  Rendered profiles/new.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 69ms (Views: 59.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 195.181.163.45 at 2020-06-11 20:30:37 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 195.181.163.45 at 2020-06-11 20:32:06 +0000
+Cannot render console from 195.181.163.45! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.4ms)
+
+
