@@ -9,12 +9,12 @@ class ProfilesController < ApplicationController
   # POST to /users/:user_id/profile 
   def create
     # ensure that we have the user who is filling out form
-    @user = User.find(params[:user_id])
+    @user = User.find(id: params[:user_id])
     # Create profile linked to this specific user
     @profile = @user.build_profile(profile_params)
     if @profile.save
       flash[:success] = "Profile Updated"
-      redirect_to user_path(params[:user_id])
+      redirect_to user_path(id: params[:user_id])
     else
       render action: :new
     end
@@ -22,8 +22,24 @@ class ProfilesController < ApplicationController
   
   # GET to /users/:user_id/profile/edit
   def edit
-    @user = User.find(params[:user_id])
+    @user = User.find(id: params[:user_id])
     @profile = @user.profile
+  end
+  
+  # PUT to /users/:user_id/profile
+  def update
+    # retrieeve user from the database
+    @user = User.find(id: params[:user_id])
+    # retrive that user profile
+    @profile = @user.profile
+    # Mass assign edited profile attributes and save (update)
+    if @profile.update_attributes(profile_params)
+      flash[:success] = "Profile Updated"
+      # redirect to their profile page
+      redirect_to user_path(id: params[:user_id])
+    else
+      render action: :edit
+    end
   end
   
   private
